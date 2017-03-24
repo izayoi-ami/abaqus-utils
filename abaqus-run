@@ -9,4 +9,4 @@ JOBNAME="${TIME}-${INPUT_NAME%%.*}-${USER_NAME%%.*}"
 OUTDIR="${BASEDIR}/${JOBNAME}"
 mkdir -p ${OUTDIR}
 cd ${OUTDIR}
-abaqus input=${INPUT} user=${USER} cpus=${3:-1} job=${JOBNAME}
+abaqus input=${INPUT} user=${USER} cpus=${3:-1} job=${JOBNAME} >output.log
